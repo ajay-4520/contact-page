@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact and Social Media Links</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ 
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background: white;
+    }
+
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      color: #000000;
+    }
+
+    .social-links .link-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+    }
+
+    .social-links a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+      font-size: 40px;
+      transition: transform 0.3s, filter 0.3s;
+      border: 2px solid #000;
+      padding: 10px;
+      border-radius: 10px;
+      width: 250px;
+      justify-content: space-between;
+      background: white;
+    }
+
+    .social-links a span {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .social-links a:hover {
+      transform: scale(1.1);
+      filter: brightness(1.2);
+    }
+
+    .profile-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .profile-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #87CEEB;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 32px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .share-menu {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 100%;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+      padding: 5px;
+      z-index: 10;
+    }
+
+    .dots {
+      cursor: pointer;
+      font-size: 20px;
+      padding: 5px;
+    }
+
+    .share-menu.active {
+      display: block;
+    }
+
+    .fab.fa-instagram { color: #E4405F; }
+    .fab.fa-telegram-plane { color: #0088cc; }
+    .fas.fa-envelope { color: #D44638; }
+    .fab.fa-whatsapp { color: #25D366; }
+    .fab.fa-linkedin { color: #0077B5; }
+
+    @media (max-width: 480px) {
+      .social-links a {
+        width: 90%;
+        font-size: 32px;
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-container">
+    <div class="profile-icon">A</div>
+    <div style="font-size: 18px; font-weight: bold; color: black;">AJAY M</div>
+  </div>
+
+  <div class="social-links">
+
+    <div class="link-container">
+      <a href="https://www.instagram.com/___A_J_A_A___18" target="_blank">
+        <i class="fab fa-instagram"></i>
+        <span>Instagram</span>
+      </a>
+      <div class="dots" onclick="toggleShareMenu(this)">⋮</div>
+      <div class="share-menu">
+        <a href="#" onclick="shareLink('Instagram', 'https://www.instagram.com/___A_J_A_A___18')">Share</a>
+      </div>
+    </div>
+
+    <div class="link-container">
+      <a href="https://t.me/AJAY000789" target="_blank">
+        <i class="fab fa-telegram-plane"></i>
+        <span>Telegram</span>
+      </a>
+      <div class="dots" onclick="toggleShareMenu(this)">⋮</div>
+      <div class="share-menu">
+        <a href="#" onclick="shareLink('Telegram', 'https://t.me/AJAY000789')">Share</a>
+      </div>
+    </div>
+
+    <div class="link-container">
+      <a href="mailto:ajaymekalathuri@gmail.com?subject=Hello!&body=Hi, I would like to contact you...">
+        <i class="fas fa-envelope"></i>
+        <span>Email</span>
+      </a>
+    </div>
+
+    <div class="link-container">
+      <a href="https://wa.me/916303323770" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+
+    <div class="link-container">
+      <a href="https://www.linkedin.com/in/ajay-mekalathuri-9738ba2a7" target="_blank">
+        <i class="fab fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+      <div class="dots" onclick="toggleShareMenu(this)">⋮</div>
+      <d
